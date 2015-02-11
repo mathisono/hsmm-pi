@@ -67,9 +67,10 @@ Raspberry Pi Installation
 1.  Connect the wired Ethernet port on the Pi to a network with Internet access
 1.  Apply power to the Pi
 1.  Login to the Pi, either through an SSH session or the console, using the 'pi' account
-1.  Run the Raspberry Pi Setup program:
+1.  Run the Raspberry Pi Setup program and then update the Pi's firmware:
 
         sudo raspi-config
+        sudo rpi-update
 1.  Expand the filesystem to fill the SD memory card
 1.  Change the password for the 'pi' account
 1. If installing over an SSH connection to the Pi, then I recommend you install 'screen' (sudo apt-get install screen) to ensure that the installation script is not stopped prematurely if you lose connectivity with the Pi.  This is optional, but I highly recommend using screen if installing over the network.  You can find more info on screen here: http://linux.die.net/man/1/screen
